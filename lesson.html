@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontology UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2><div id="userGreeting"></div>Select Your Lesson</h2>
+        <div class="button-container">
+            <button class="btn" onclick="navigateTo('mathematics.html')">Mathematics</button>
+            <button class="btn" onclick="navigateTo('computer-science.html')">Computer Science</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+    window.onload = function () {
+        var currentUserName = localStorage.getItem("userName");
+        if (currentUserName) {
+            document.getElementById('userGreeting').innerText = "Hi " + currentUserName + ", ";
+        }
+    }
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontology UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Steps</h2>
+        <p><b>Identify the Numbers:</b><br> The numbers to add are 1 and 2.</p>
+        <p><b>Combine the Values:</b><br> Addition is the process of finding the total or sum by combining two or more numbers. So, you combine 1 and 2.</p>
+        <p><b>Perform the Addition:</b><br> Add the values together.<br>
+            Start with 1.<br>
+            Add 2 to it.<br>
+            1 + 2 = 3.<br></p>
+
+            <h2>Question</h2>
+            <p>What is the answer for 2 + 4 ?</p> 
+            <form id="addForm"> 
+                <input class="inpVal" type="number" id="given-answer" placeholder="Enter your answer" required>
+                <input type="hidden" class="inpVal" type="number" id="answer" value="6"> 
+                <button type="submit" class="btn">Submit</button> 
+            </form> 
+            <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
